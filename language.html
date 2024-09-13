@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            background-image: url(track.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.616);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .box h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .language-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .language-option {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: linear-gradient(130deg, #33e0cfc5 0%, #251aeb9e 100%);
+            transition: background-color 0.3s ease;
+        }
+        .language-option:hover {
+            background-color: #2980b9;
+        }
+        .next-button {
+            background-color: #6429b1;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            text-decoration: none;
+            display: none;
+        }
+        .next-button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <h1>Please Select Your Language</h1>
+        <div class="language-options">
+            <button class="language-option" onclick="selectLanguage('Marathi')">मराठी (Marathi)</button>
+            <button class="language-option" onclick="selectLanguage('Hindi')">हिंदी (Hindi)</button>
+            <button class="language-option" onclick="selectLanguage('English')">इंग्रजी (English)</button>
+        </div>
+        <a href="login.html" class="next-button" id="nextButton">Next</a>
+    </div>
+</div>
+
+<script>
+    function selectLanguage(language) {
+        document.getElementById("nextButton").style.display = "inline-block";
+        console.log("Language Selected: " + language);
+        // Add additional code here if needed to handle language selection
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(track.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .language-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .language-option {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .language-option:hover {
+            background-color: #2980b9;
+        }
+        .next-button {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .next-button:hover {
+            background-color: #229954;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Please Select Your Language</h1>
+    <div class="language-options">
+        <button class="language-option" onclick="selectLanguage('Marathi')">मराठी (Marathi)</button>
+        <button class="language-option" onclick="selectLanguage('Hindi')">हिंदी (Hindi)</button>
+        <button class="language-option" onclick="selectLanguage('English')">English</button>
+    </div>
+    <a href="nextpage.html" class="next-button" id="nextButton" style="display:none;">Next</a>
+</div>
+
+<script>
+    let selectedLanguage = '';
+
+    function selectLanguage(language) {
+        selectedLanguage = language;
+        document.getElementById("nextButton").style.display = "inline-block";
+        console.log("Language Selected: " + language);
+        // Save the selected language (if needed, for further processing)
+    }
+</script>
+
+</body>
+</html> -->

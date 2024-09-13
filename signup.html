@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('track.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .signup-container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .signup-container h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .signup-container p{
+            margin-top: 25px;
+        }
+        .signup-container input[type="text"], 
+        .signup-container input[type="password"], 
+        .signup-container input[type="email"], 
+        .signup-container input[type="tel"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0 20px 0;
+            display: inline-block;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        /* .signup-container input[type="tel"] {
+            max-length: 10;
+        } */
+        .signup-container .signup-button {
+            background: linear-gradient(130deg, #77ece0c0 0%, #4f2370b9 100%);;
+            color: rgb(0, 0, 0);
+            padding: 15px 30px;
+            font-size: 18px;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-container button a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .signup-container .signup-button:hover {
+            background-color: #5f42b6aa;
+            color: #f0f8ff;
+        }
+        .signup-container .login-link {
+            margin-top: 20px;
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .signup-container .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>Create Your Account Here !</h2>
+    <form action="signup" method="post">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit" class="signup-button"><a href="login.html">Sign Up</a></button>
+        <!-- <a href="#" class="login-link">Already have an account? Log in</a> -->
+        <p>Already have an account? <a href="login.html">Login Here</a></p>
+    </form>
+</div>
+
+</body>
+</html>
+
